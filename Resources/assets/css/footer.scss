@@ -1,0 +1,7 @@
+#footer{
+    @include rounded(right, 6px ); 
+
+    color: #CCC;
+    background-color: #313131;
+    padding-top: 20px;
+}

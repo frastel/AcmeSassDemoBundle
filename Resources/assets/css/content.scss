@@ -1,0 +1,15 @@
+#content{
+    margin: 1em;
+    clear: left;
+    background-color: $main-background-color;
+    $color: $main-color;
+
+    .sub{
+        color: $light-color;
+
+        .sub{
+            color: $link-color;
+        }
+    }
+
+}

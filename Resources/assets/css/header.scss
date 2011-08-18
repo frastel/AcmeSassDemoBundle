@@ -1,0 +1,19 @@
+$logoUrl: "/bundles/acmesassdemo/images/sass.gif";
+
+#header{
+    @include rounded(top, 16px); 
+
+    background-color: #F6F6F6;
+    border: 1px solid #DFDFDF;
+    padding: 30px 28px;
+    margin-bottom: 20px;
+    color: #333333;
+    font: 11px Verdana,Arial,sans-serif;
+
+    .logo{
+        width:  image-width($logoUrl)/2;
+        height: image-height($logoUrl)/2;
+        border: 1px solid #CCC;
+    }
+}
+

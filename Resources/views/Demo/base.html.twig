@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}Sass Demo!{% endblock %}</title>
+        {#{% block stylesheets %}{% endblock %} #}
+
+        {% include "AcmeSassDemoBundle:Demo:stylesheets.html.twig" %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div id="header">
+            {% block header %}
+                <h1>Sass Demo</h1>
+                <div class="logo">this container is half as big as the sass.gif's dimension</div>
+            {% endblock %}
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li class="add"><a href="#">add something</a></li>
+                <li class="edit"><a href="#">edit something</a></li>
+                <li class="delete"><a href="#">delete something</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            {% block body %}hello sass!{% endblock %}
+        </div>
+
+        <div id="footer">
+            {% block footer %}awesome footer goes here ...{% endblock %}
+        </div>
+        {% block javascripts %}{% endblock %}</
+    </body>
+</html>

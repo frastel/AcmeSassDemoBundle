@@ -1,0 +1,22 @@
+$main-background-color: #FFF;
+$main-color: #FFF;
+$light-color: #759E1A;
+$link-color: #0088CC;
+
+body {
+    background-color: #CCC;
+}
+
+@mixin rounded($side, $radius: 10px) {
+    border-radius: $radius;
+    border-#{$side}-radius: $radius;
+    -moz-border-radius-#{$side}: $radius;
+    -webkit-border-#{$side}-radius: $radius;
+}
+
+@import "header.scss";
+@import "menu.scss";
+@import "content.scss";
+@import "footer.scss";
+
+

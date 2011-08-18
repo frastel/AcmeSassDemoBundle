@@ -1,0 +1,23 @@
+$menu: sprite-map("/images/sprites/*.png");
+
+#menu li {
+    background-image: sprite-url($menu);
+    background-repeat: no-repeat;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 5px;
+    height: 16px;
+    float: left;
+    list-style-type: none;
+
+    &.add {
+        background-position: sprite-position($menu, "book_add");
+    }
+
+    &.edit {
+        background-position: sprite-position($menu, "book_edit");
+    }
+
+    &.delete {
+        background-position: sprite-position($menu, "book_delete");
+    }
+}

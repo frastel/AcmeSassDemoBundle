@@ -1,0 +1,16 @@
+{% stylesheets filter="compass"
+    "@AcmeSassDemoBundle/Resources/assets/css/base.scss"
+%}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+
+{% endstylesheets %}
+
+{#
+# should every css file be listed directly as filter
+# or is it better to import them in the base.css?
+#
+    "@AcmeSassDemoBundle/Resources/assets/css/header.scss"
+    "@AcmeSassDemoBundle/Resources/assets/css/menu.scss"
+    "@AcmeSassDemoBundle/Resources/assets/css/content.scss"
+    "@AcmeSassDemoBundle/Resources/assets/css/footer.scss"
+#}
