@@ -56,6 +56,11 @@ app/config/config_dev.yml
             sass:    ~
             compass: ~
 
+---
+Install the new assets
+
+    php app/console assets:install web
+
 Demo
 ------------
 Call this demo with `/demo/sass`. The resulting page is not very pretty, but after you look in the *.scss files in the `Resources/assets/css` folder
@@ -65,6 +70,8 @@ Idea
 ------------
 The idea was taken from a discussion started in the [test.ical.ly blog][3].
 The main installation part is explained in [Sass, Compass and Assetic in 10 minutes by Alexandre Salomé][4].
+
+Feel free for contributing to this demo. Sass and compass are more powerful than this demo currently shows.
 
 [1]: http://sass-lang.com/tutorial.html
 [2]: http://compass-style.org/
